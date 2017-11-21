@@ -1,28 +1,28 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class CalculatorTest {
     @Test
     public void add(){
         Calculator cal = new Calculator();
-        System.out.println(cal.add(6, 3));
+        assertEquals(9, cal.add(6, 3));
     }
 
     @Test
     public void subtract(){
         Calculator cal = new Calculator();
-        System.out.println(cal.subtract(6, 3));
+        assertEquals(3, cal.subtract(6, 3));
     }
 
     @Test
     public void multiply(){
         Calculator cal = new Calculator();
-        System.out.println(cal.multiply(6, 3));
+        assertEquals(18, cal.multiply(6, 3));
     }
 
     @Test
     public void divide(){
         Calculator cal = new Calculator();
-        System.out.println(cal.divide(6, 3));
+        assertEquals(2, cal.divide(6, 3));
     }
 }
